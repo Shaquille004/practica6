@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  web:  # Nombre del servicio
+    image: nginx:latest  # Imagen de NGINX
+    ports:
+      - "8080:80"  # Mapeo de puertos
+    volumes:
+      - ./src:/usr/share/nginx/html  # Mapeo de volúmenes
+
